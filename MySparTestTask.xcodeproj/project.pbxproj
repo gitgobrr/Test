@@ -13,6 +13,8 @@
 		A52F79A32A87765200F51062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52F79A22A87765200F51062 /* Preview Assets.xcassets */; };
 		A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F79A92A877A7500F51062 /* LocationBarView.swift */; };
 		A5ABBDA62A87BD50005065DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDA52A87BD50005065DF /* Constants.swift */; };
+		A5ABBDA82A87CA7A005065DF /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDA72A87CA7A005065DF /* StoryView.swift */; };
+		A5ABBDAA2A87E214005065DF /* StoriesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDA92A87E214005065DF /* StoriesScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A52F79A22A87765200F51062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52F79A92A877A7500F51062 /* LocationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBarView.swift; sourceTree = "<group>"; };
 		A5ABBDA52A87BD50005065DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5ABBDA72A87CA7A005065DF /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		A5ABBDA92A87E214005065DF /* StoriesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */,
 				A52F799D2A87765100F51062 /* ContentView.swift */,
 				A52F79A92A877A7500F51062 /* LocationBarView.swift */,
+				A5ABBDA72A87CA7A005065DF /* StoryView.swift */,
+				A5ABBDA92A87E214005065DF /* StoriesScrollView.swift */,
 				A5ABBDA52A87BD50005065DF /* Constants.swift */,
 				A52F799F2A87765200F51062 /* Assets.xcassets */,
 				A52F79A12A87765200F51062 /* Preview Content */,
@@ -143,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5ABBDA82A87CA7A005065DF /* StoryView.swift in Sources */,
+				A5ABBDAA2A87E214005065DF /* StoriesScrollView.swift in Sources */,
 				A52F799E2A87765100F51062 /* ContentView.swift in Sources */,
 				A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */,
 				A52F799C2A87765100F51062 /* MySparTestTaskApp.swift in Sources */,
