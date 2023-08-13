@@ -12,15 +12,17 @@ struct ProductsScrollView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: C.Spacing.medium) {
                 ForEach(0..<9) { id in
-                    ProductCardView(bonus: randomBonus())
+                    let rand = Int(arc4random() % 1000)
+                    let price = Double(rand) / Double(id+1)
+                    let salesPrice = rand % 4 == 0 ? price*2 : nil
+                    ProductCardView(price: price, salesPrice: salesPrice, bonus: randomBonus(rand % 4))
                 }
             }
-            .padding(.vertical, 32)
         }
     }
     
-    private func randomBonus() -> Bonus? {
-        switch (arc4random() % 3) {
+    private func randomBonus(_ n: Int) -> Bonus? {
+        switch n {
         case 0:
             return .superPrice
         case 1:
