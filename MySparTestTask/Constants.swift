@@ -5,11 +5,10 @@
 //  Created by sergey on 12.08.2023.
 //
 
-import SwiftUI
-
 typealias C = Constants
 
 enum Constants {
+    static let placeHolderImage = "photo"
     static let locationBarPadding = 10.0
     static let rectangleCornerRadius = 12.0
     enum Spacing {

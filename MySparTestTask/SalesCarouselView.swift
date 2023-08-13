@@ -27,7 +27,7 @@ struct SalesCarouselView_Previews: PreviewProvider {
 
 struct SalesButtonView: View {
     var body: some View {
-        Image(systemName: "questionmark.square.dashed")
+        Image(systemName: C.placeHolderImage)
             .resizable()
             .aspectRatio(contentMode: .fit)
             .frame(maxWidth: .infinity)
