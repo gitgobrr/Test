@@ -11,15 +11,7 @@ struct SalesCarouselView: View {
     var body: some View {
         TabView {
             ForEach(0..<3) { product in
-                Image(systemName: "questionmark.square.dashed")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(maxWidth: .infinity)
-                    .background(
-                        RoundedRectangle(cornerRadius: 12)
-                            .fill(.gray)
-                    )
-                    .padding(.horizontal, 16)
+                SalesButtonView()
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
@@ -30,5 +22,19 @@ struct SalesCarouselView: View {
 struct SalesCarouselView_Previews: PreviewProvider {
     static var previews: some View {
         SalesCarouselView()
+    }
+}
+
+struct SalesButtonView: View {
+    var body: some View {
+        Image(systemName: "questionmark.square.dashed")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(maxWidth: .infinity)
+            .background(
+                RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
+                    .fill(.gray)
+            )
+            .padding(.horizontal, C.Spacing.medium)
     }
 }

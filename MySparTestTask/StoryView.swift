@@ -13,10 +13,10 @@ struct StoryView: View {
         VStack(alignment: .center, spacing: 0) {
             Circle()
                 .fill(.gray)
-                .padding(8)
+                .padding(C.Spacing.small)
                 .background(
                     Circle()
-                        .strokeBorder(isSeen ? .gray : .green, lineWidth: 4)
+                        .strokeBorder(isSeen ? .gray : .green, lineWidth: C.Spacing.small/2)
                 )
             Text("Voluptate aliquip nisi anim est pariatur et deserunt commodo consequat consequat adipisicing esse eu veniam.")
                 .multilineTextAlignment(.center)
