@@ -59,7 +59,7 @@ struct ProductCardView: View {
         .frame(maxHeight: 250)
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: C.rectangleCornerRadius))
-        .shadow(radius: 10)
+        .shadow(color: .gray.opacity(0.3), radius: 8)
     }
 }
 
