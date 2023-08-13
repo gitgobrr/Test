@@ -19,6 +19,8 @@
 		A5ABBDAE2A889A70005065DF /* BonusCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDAD2A889A70005065DF /* BonusCountView.swift */; };
 		A5ABBDB02A88AC50005065DF /* OfferCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDAF2A88AC50005065DF /* OfferCardView.swift */; };
 		A5ABBDB22A88C60C005065DF /* OffersScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDB12A88C60C005065DF /* OffersScrollView.swift */; };
+		A5ABBDB42A88C69E005065DF /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDB32A88C69E005065DF /* ProductCardView.swift */; };
+		A5ABBDB62A88E7BF005065DF /* PriceTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDB52A88E7BF005065DF /* PriceTagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		A5ABBDAD2A889A70005065DF /* BonusCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonusCountView.swift; sourceTree = "<group>"; };
 		A5ABBDAF2A88AC50005065DF /* OfferCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferCardView.swift; sourceTree = "<group>"; };
 		A5ABBDB12A88C60C005065DF /* OffersScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersScrollView.swift; sourceTree = "<group>"; };
+		A5ABBDB32A88C69E005065DF /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		A5ABBDB52A88E7BF005065DF /* PriceTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				A5ABBDAD2A889A70005065DF /* BonusCountView.swift */,
 				A5ABBDAF2A88AC50005065DF /* OfferCardView.swift */,
 				A5ABBDB12A88C60C005065DF /* OffersScrollView.swift */,
+				A5ABBDB32A88C69E005065DF /* ProductCardView.swift */,
+				A5ABBDB52A88E7BF005065DF /* PriceTagView.swift */,
 				A5ABBDA52A87BD50005065DF /* Constants.swift */,
 				A52F799F2A87765200F51062 /* Assets.xcassets */,
 				A52F79A12A87765200F51062 /* Preview Content */,
@@ -164,12 +170,14 @@
 				A5ABBDB22A88C60C005065DF /* OffersScrollView.swift in Sources */,
 				A5ABBDAC2A889532005065DF /* SalesCarouselView.swift in Sources */,
 				A5ABBDA82A87CA7A005065DF /* StoryView.swift in Sources */,
+				A5ABBDB62A88E7BF005065DF /* PriceTagView.swift in Sources */,
 				A5ABBDAE2A889A70005065DF /* BonusCountView.swift in Sources */,
 				A5ABBDAA2A87E214005065DF /* StoriesScrollView.swift in Sources */,
 				A52F799E2A87765100F51062 /* ContentView.swift in Sources */,
 				A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */,
 				A52F799C2A87765100F51062 /* MySparTestTaskApp.swift in Sources */,
 				A5ABBDB02A88AC50005065DF /* OfferCardView.swift in Sources */,
+				A5ABBDB42A88C69E005065DF /* ProductCardView.swift in Sources */,
 				A5ABBDA62A87BD50005065DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
