@@ -11,30 +11,22 @@ struct SalesCarouselView: View {
     var body: some View {
         TabView {
             ForEach(0..<3) { product in
-                SalesButtonView()
+                Image(systemName: C.placeHolderImage)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(
+                        RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
+                            .fill(.gray)
+                    )
+                    .padding(.horizontal, C.Spacing.medium)
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
-        .frame(maxHeight: 200)
+        .frame(height: 200)
     }
 }
 
 struct SalesCarouselView_Previews: PreviewProvider {
     static var previews: some View {
         SalesCarouselView()
-    }
-}
-
-struct SalesButtonView: View {
-    var body: some View {
-        Image(systemName: C.placeHolderImage)
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(maxWidth: .infinity)
-            .background(
-                RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
-                    .fill(.gray)
-            )
-            .padding(.horizontal, C.Spacing.medium)
     }
 }

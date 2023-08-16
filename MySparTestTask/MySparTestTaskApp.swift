@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct MySparTestTaskApp: App {
+    @State private var selection: Tab = .home
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView(selection: $selection) {
+                
+            }
         }
     }
+}
+
+enum Tab: Int, Identifiable {
+    var id: Int {
+        self.rawValue
+    }
+    
+    case home,catalogue,cart,profile
 }

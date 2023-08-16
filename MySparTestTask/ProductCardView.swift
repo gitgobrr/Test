@@ -26,8 +26,8 @@ struct ProductCardView: View {
         ZStack(alignment: .topLeading) {
             VStack(alignment: .center, spacing: 0) {
                 Image(systemName: C.placeHolderImage)
-                    .frame(maxHeight: .infinity)
-                HStack(alignment: .bottom, spacing: 0) {
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                HStack(alignment: .center, spacing: 0) {
                     PriceTagView(price: price, salePrice: salesPrice)
                     Spacer()
                     Button {
@@ -35,24 +35,25 @@ struct ProductCardView: View {
                     } label: {
                         Image(systemName: "basket.fill")
                             .foregroundColor(.white)
-                            .padding(C.Spacing.small)
+                            .padding(C.Spacing.medium)
                             .background(
                                 Circle()
                                     .fill(.green)
                             )
                     }
+                    .frame(maxHeight: .infinity)
                 }
+                .fixedSize(horizontal: false, vertical: true)
+                .padding(.horizontal, C.Spacing.small)
             }
-            .frame(maxWidth: 160)
-            .padding(.horizontal, C.Spacing.small)
             .padding(.bottom, C.Spacing.mini)
             if let bonus = self.bonus {
                 BonusText(text: bonus.rawValue)
             }
         }
-        .frame(maxHeight: 250)
         .background(Color.white)
         .clipShape(RoundedRectangle(cornerRadius: C.rectangleCornerRadius))
+        .padding(.vertical, C.Spacing.medium)
         .shadow(color: .gray.opacity(0.3), radius: 8)
     }
 }
@@ -61,6 +62,8 @@ struct BonusText: View {
     let text: String
     var body: some View {
         Text(text)
+            .lineLimit(2)
+            .multilineTextAlignment(.leading)
             .foregroundColor(.white)
             .padding(.horizontal,C.Spacing.small)
             .padding(.vertical,C.Spacing.mini)

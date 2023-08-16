@@ -11,9 +11,16 @@ struct OffersScrollView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: C.Spacing.small) {
+                Spacer()
+                    .foregroundColor(.clear)
+                    .frame(width: C.Spacing.small)
                 ForEach(0..<9) { id in
                     OfferCardView()
+                        .frame(width: 96, height: 128)
                 }
+                Spacer()
+                    .foregroundColor(.clear)
+                    .frame(width: C.Spacing.small)
             }
         }
     }

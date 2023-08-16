@@ -11,9 +11,7 @@ struct OfferCardView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             Image(systemName: C.placeHolderImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxHeight: .infinity)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(
                     RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
                         .fill(.gray)

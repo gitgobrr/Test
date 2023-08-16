@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ProductsScrollView: View {
+    let title: String
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .center, spacing: C.Spacing.medium) {
-                ForEach(0..<9) { id in
-                    let rand = Int(arc4random() % 1000)
-                    let price = Double(rand) / Double(id+1)
-                    let salesPrice = rand % 4 == 0 ? price*2 : nil
-                    ProductCardView(price: price, salesPrice: salesPrice, bonus: randomBonus(rand % 4))
+        VStack(alignment: .leading, spacing: 0) {
+            Text(title)
+                .font(.system(size: 22, weight: .bold, design: .rounded))
+                .padding(.horizontal, C.Spacing.medium)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .center, spacing: C.Spacing.medium) {
+                    Spacer()
+                        .foregroundColor(.clear)
+                        .frame(width: C.Spacing.small)
+                    ForEach(0..<9) { id in
+                        let rand = Int(arc4random() % 1000)
+                        let price = Double(rand) / Double(id+1)
+                        let salesPrice = rand % 4 == 0 ? price*2 : nil
+                        ProductCardView(price: price, salesPrice: salesPrice, bonus: randomBonus(rand % 4))
+                            .frame(width: 170, height: 255)
+                    }
+                    Spacer()
+                        .foregroundColor(.clear)
+                        .frame(width: C.Spacing.small)
                 }
             }
         }
@@ -35,6 +48,6 @@ struct ProductsScrollView: View {
 
 struct ProductsScrollView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductsScrollView()
+        ProductsScrollView(title: "Title")
     }
 }

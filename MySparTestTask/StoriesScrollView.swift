@@ -10,10 +10,17 @@ import SwiftUI
 struct StoriesScrollView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(alignment: .center, spacing: C.Spacing.small) {
+            HStack(alignment: .center, spacing: C.Spacing.large) {
+                Spacer()
+                    .foregroundColor(.clear)
+                    .frame(width: C.Spacing.small)
                 ForEach(0..<9) { id in
                     StoryView(isSeen: false)
+                        .frame(width: 72)
                 }
+                Spacer()
+                    .foregroundColor(.clear)
+                    .frame(width: C.Spacing.small)
             }
         }
     }

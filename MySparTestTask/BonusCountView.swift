@@ -11,8 +11,12 @@ struct BonusCountView: View {
     @State private var bonusCount = 0
     var body: some View {
         ZStack(alignment: .topLeading) {
-            SalesButtonView()
-                .padding(.horizontal, -C.Spacing.medium)
+            Image(systemName: C.placeHolderImage)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(
+                    RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
+                        .fill(.gray)
+                )
             HStack(alignment: .lastTextBaseline, spacing: C.Spacing.mini) {
                 Text("\(bonusCount)")
                     .font(.largeTitle.weight(.bold))
@@ -21,7 +25,7 @@ struct BonusCountView: View {
             }
             .padding([.top,.leading], C.Spacing.medium)
         }
-        .frame(maxHeight: 100)
+        .frame(height: 100)
     }
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A52F799C2A87765100F51062 /* MySparTestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */; };
-		A52F799E2A87765100F51062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F799D2A87765100F51062 /* ContentView.swift */; };
 		A52F79A02A87765200F51062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52F799F2A87765200F51062 /* Assets.xcassets */; };
 		A52F79A32A87765200F51062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52F79A22A87765200F51062 /* Preview Assets.xcassets */; };
 		A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F79A92A877A7500F51062 /* LocationBarView.swift */; };
@@ -24,12 +23,13 @@
 		A5ABBDB82A88F21E005065DF /* ProductsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDB72A88F21E005065DF /* ProductsScrollView.swift */; };
 		A5ABBDBA2A8920CA005065DF /* RoundedCornersShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDB92A8920CA005065DF /* RoundedCornersShape.swift */; };
 		A5ABBDBC2A8933AA005065DF /* RPUView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDBB2A8933AA005065DF /* RPUView.swift */; };
+		A5ABBDBE2A893ABB005065DF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDBD2A893ABB005065DF /* HomeView.swift */; };
+		A5ABBDC02A8CF2D7005065DF /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDBF2A8CF2D7005065DF /* TopBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A52F79982A87765100F51062 /* MySparTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySparTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySparTestTaskApp.swift; sourceTree = "<group>"; };
-		A52F799D2A87765100F51062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A52F799F2A87765200F51062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52F79A22A87765200F51062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52F79A92A877A7500F51062 /* LocationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBarView.swift; sourceTree = "<group>"; };
@@ -45,6 +45,8 @@
 		A5ABBDB72A88F21E005065DF /* ProductsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsScrollView.swift; sourceTree = "<group>"; };
 		A5ABBDB92A8920CA005065DF /* RoundedCornersShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersShape.swift; sourceTree = "<group>"; };
 		A5ABBDBB2A8933AA005065DF /* RPUView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPUView.swift; sourceTree = "<group>"; };
+		A5ABBDBD2A893ABB005065DF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A5ABBDBF2A8CF2D7005065DF /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */,
-				A52F799D2A87765100F51062 /* ContentView.swift */,
+				A5ABBDBD2A893ABB005065DF /* HomeView.swift */,
+				A5ABBDBF2A8CF2D7005065DF /* TopBarView.swift */,
 				A52F79A92A877A7500F51062 /* LocationBarView.swift */,
 				A5ABBDA72A87CA7A005065DF /* StoryView.swift */,
 				A5ABBDA92A87E214005065DF /* StoriesScrollView.swift */,
@@ -86,9 +89,9 @@
 				A5ABBDAD2A889A70005065DF /* BonusCountView.swift */,
 				A5ABBDAF2A88AC50005065DF /* OfferCardView.swift */,
 				A5ABBDB12A88C60C005065DF /* OffersScrollView.swift */,
-				A5ABBDB32A88C69E005065DF /* ProductCardView.swift */,
 				A5ABBDB92A8920CA005065DF /* RoundedCornersShape.swift */,
 				A5ABBDB72A88F21E005065DF /* ProductsScrollView.swift */,
+				A5ABBDB32A88C69E005065DF /* ProductCardView.swift */,
 				A5ABBDB52A88E7BF005065DF /* PriceTagView.swift */,
 				A5ABBDBB2A8933AA005065DF /* RPUView.swift */,
 				A5ABBDA52A87BD50005065DF /* Constants.swift */,
@@ -179,17 +182,18 @@
 				A5ABBDB22A88C60C005065DF /* OffersScrollView.swift in Sources */,
 				A5ABBDAC2A889532005065DF /* SalesCarouselView.swift in Sources */,
 				A5ABBDA82A87CA7A005065DF /* StoryView.swift in Sources */,
+				A5ABBDBE2A893ABB005065DF /* HomeView.swift in Sources */,
 				A5ABBDB62A88E7BF005065DF /* PriceTagView.swift in Sources */,
 				A5ABBDAE2A889A70005065DF /* BonusCountView.swift in Sources */,
 				A5ABBDAA2A87E214005065DF /* StoriesScrollView.swift in Sources */,
 				A5ABBDBA2A8920CA005065DF /* RoundedCornersShape.swift in Sources */,
-				A52F799E2A87765100F51062 /* ContentView.swift in Sources */,
 				A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */,
 				A5ABBDB82A88F21E005065DF /* ProductsScrollView.swift in Sources */,
 				A5ABBDBC2A8933AA005065DF /* RPUView.swift in Sources */,
 				A52F799C2A87765100F51062 /* MySparTestTaskApp.swift in Sources */,
 				A5ABBDB02A88AC50005065DF /* OfferCardView.swift in Sources */,
 				A5ABBDB42A88C69E005065DF /* ProductCardView.swift in Sources */,
+				A5ABBDC02A8CF2D7005065DF /* TopBarView.swift in Sources */,
 				A5ABBDA62A87BD50005065DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
