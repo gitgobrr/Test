@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A52F799C2A87765100F51062 /* MySparTestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */; };
 		A52F79A02A87765200F51062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52F799F2A87765200F51062 /* Assets.xcassets */; };
 		A52F79A32A87765200F51062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52F79A22A87765200F51062 /* Preview Assets.xcassets */; };
 		A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52F79A92A877A7500F51062 /* LocationBarView.swift */; };
+		A58A96A92A8D4C5700B32D09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A96A82A8D4C5700B32D09 /* ContentView.swift */; };
+		A58A96AD2A8D4CBF00B32D09 /* MySparTestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58A96AC2A8D4CBF00B32D09 /* MySparTestTaskApp.swift */; };
 		A5ABBDA62A87BD50005065DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDA52A87BD50005065DF /* Constants.swift */; };
 		A5ABBDA82A87CA7A005065DF /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDA72A87CA7A005065DF /* StoryView.swift */; };
 		A5ABBDAA2A87E214005065DF /* StoriesScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ABBDA92A87E214005065DF /* StoriesScrollView.swift */; };
@@ -29,10 +30,11 @@
 
 /* Begin PBXFileReference section */
 		A52F79982A87765100F51062 /* MySparTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySparTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySparTestTaskApp.swift; sourceTree = "<group>"; };
 		A52F799F2A87765200F51062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A52F79A22A87765200F51062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A52F79A92A877A7500F51062 /* LocationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationBarView.swift; sourceTree = "<group>"; };
+		A58A96A82A8D4C5700B32D09 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A58A96AC2A8D4CBF00B32D09 /* MySparTestTaskApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySparTestTaskApp.swift; sourceTree = "<group>"; };
 		A5ABBDA52A87BD50005065DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5ABBDA72A87CA7A005065DF /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		A5ABBDA92A87E214005065DF /* StoriesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesScrollView.swift; sourceTree = "<group>"; };
@@ -79,7 +81,8 @@
 		A52F799A2A87765100F51062 /* MySparTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				A52F799B2A87765100F51062 /* MySparTestTaskApp.swift */,
+				A58A96AC2A8D4CBF00B32D09 /* MySparTestTaskApp.swift */,
+				A58A96A82A8D4C5700B32D09 /* ContentView.swift */,
 				A5ABBDBD2A893ABB005065DF /* HomeView.swift */,
 				A5ABBDBF2A8CF2D7005065DF /* TopBarView.swift */,
 				A52F79A92A877A7500F51062 /* LocationBarView.swift */,
@@ -181,16 +184,17 @@
 			files = (
 				A5ABBDB22A88C60C005065DF /* OffersScrollView.swift in Sources */,
 				A5ABBDAC2A889532005065DF /* SalesCarouselView.swift in Sources */,
+				A58A96AD2A8D4CBF00B32D09 /* MySparTestTaskApp.swift in Sources */,
 				A5ABBDA82A87CA7A005065DF /* StoryView.swift in Sources */,
 				A5ABBDBE2A893ABB005065DF /* HomeView.swift in Sources */,
 				A5ABBDB62A88E7BF005065DF /* PriceTagView.swift in Sources */,
 				A5ABBDAE2A889A70005065DF /* BonusCountView.swift in Sources */,
 				A5ABBDAA2A87E214005065DF /* StoriesScrollView.swift in Sources */,
+				A58A96A92A8D4C5700B32D09 /* ContentView.swift in Sources */,
 				A5ABBDBA2A8920CA005065DF /* RoundedCornersShape.swift in Sources */,
 				A52F79AA2A877A7500F51062 /* LocationBarView.swift in Sources */,
 				A5ABBDB82A88F21E005065DF /* ProductsScrollView.swift in Sources */,
 				A5ABBDBC2A8933AA005065DF /* RPUView.swift in Sources */,
-				A52F799C2A87765100F51062 /* MySparTestTaskApp.swift in Sources */,
 				A5ABBDB02A88AC50005065DF /* OfferCardView.swift in Sources */,
 				A5ABBDB42A88C69E005065DF /* ProductCardView.swift in Sources */,
 				A5ABBDC02A8CF2D7005065DF /* TopBarView.swift in Sources */,

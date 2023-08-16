@@ -11,9 +11,6 @@ struct HomeView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading,spacing: C.Spacing.small) {
-                TopBarView()
-                    .padding(.horizontal, C.Spacing.medium)
-                Divider()
                 StoriesScrollView()
                 SalesCarouselView()
                 BonusCountView()
