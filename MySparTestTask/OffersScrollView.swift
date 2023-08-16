@@ -16,7 +16,7 @@ struct OffersScrollView: View {
                     .frame(width: C.Spacing.small)
                 ForEach(0..<9) { id in
                     OfferCardView()
-                        .frame(width: 96, height: 128)
+                        .frame(width: C.Dimension.offerCardSize.w, height: C.Dimension.offerCardSize.h)
                 }
                 Spacer()
                     .foregroundColor(.clear)

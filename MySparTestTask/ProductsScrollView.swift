@@ -12,7 +12,7 @@ struct ProductsScrollView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title)
-                .font(.system(size: 22, weight: .bold, design: .rounded))
+                .font(C.Font.productTitle)
                 .padding(.horizontal, C.Spacing.medium)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: C.Spacing.medium) {
@@ -24,7 +24,7 @@ struct ProductsScrollView: View {
                         let price = Double(rand) / Double(id+1)
                         let salesPrice = rand % 4 == 0 ? price*2 : nil
                         ProductCardView(price: price, salesPrice: salesPrice, bonus: randomBonus(rand % 4))
-                            .frame(width: 170, height: 255)
+                            .frame(width: C.Dimension.productCardSize.w, height: C.Dimension.productCardSize.h)
                     }
                     Spacer()
                         .foregroundColor(.clear)

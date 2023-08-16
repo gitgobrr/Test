@@ -25,7 +25,7 @@ struct ProductCardView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack(alignment: .center, spacing: 0) {
-                Image(systemName: C.placeHolderImage)
+                C.placeHolderImage
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                 HStack(alignment: .center, spacing: 0) {
                     PriceTagView(price: price, salePrice: salesPrice)

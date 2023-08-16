@@ -11,7 +11,7 @@ struct SalesCarouselView: View {
     var body: some View {
         TabView {
             ForEach(0..<3) { product in
-                Image(systemName: C.placeHolderImage)
+                C.placeHolderImage
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(
                         RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
@@ -21,7 +21,7 @@ struct SalesCarouselView: View {
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
-        .frame(height: 200)
+        .frame(height: C.Dimension.carouselHeight)
     }
 }
 

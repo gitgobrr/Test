@@ -16,7 +16,7 @@ struct StoriesScrollView: View {
                     .frame(width: C.Spacing.small)
                 ForEach(0..<9) { id in
                     StoryView(isSeen: false)
-                        .frame(width: 72)
+                        .frame(width: C.Dimension.storyWidth)
                 }
                 Spacer()
                     .foregroundColor(.clear)

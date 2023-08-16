@@ -12,12 +12,11 @@ struct RPUView: View {
         ZStack {
             VStack(spacing: 0) {
                 Text("₽")
-                    .font(.system(size: 8, weight: .bold, design: .rounded))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text("шт")
-                    .font(.system(size: 8, weight: .bold, design: .rounded))
                     .frame(maxWidth: .infinity, alignment: .trailing)
             }
+            .font(C.Font.rpuView)
             Image(systemName: "line.diagonal")
         }
         .fixedSize(horizontal: true, vertical: true)

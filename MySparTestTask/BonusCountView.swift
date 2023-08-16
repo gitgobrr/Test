@@ -11,7 +11,7 @@ struct BonusCountView: View {
     @State private var bonusCount = 0
     var body: some View {
         ZStack(alignment: .topLeading) {
-            Image(systemName: C.placeHolderImage)
+            C.placeHolderImage
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(
                     RoundedRectangle(cornerRadius: C.rectangleCornerRadius)
@@ -25,7 +25,7 @@ struct BonusCountView: View {
             }
             .padding([.top,.leading], C.Spacing.medium)
         }
-        .frame(height: 100)
+        .frame(height: C.Dimension.bonusCountHeight)
     }
 }
 
